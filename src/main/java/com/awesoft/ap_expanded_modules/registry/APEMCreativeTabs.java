@@ -18,6 +18,7 @@ public class APEMCreativeTabs {
         .icon(() -> APEMItems.DISK_DRIVE_MODULE.get().getDefaultInstance())
         .displayItems((parameters, output) -> {
             output.accept(APEMItems.DISK_DRIVE_MODULE.get());
+            output.accept(APEMItems.INTROSPECTION_MODULE.get());
         }
     ).build());
 
