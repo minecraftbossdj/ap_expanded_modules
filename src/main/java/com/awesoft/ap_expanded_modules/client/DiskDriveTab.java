@@ -16,6 +16,7 @@ import de.srendi.advancedperipherals.common.smartglasses.modules.ModulePeriphera
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;
+import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -33,6 +34,7 @@ public class DiskDriveTab extends AbstractWidget {
     public DiskDriveTab(int x, int y, SmartGlassesScreen screen) {
         super(screen.getGuiLeft() + x + AbstractComputerMenu.SIDEBAR_WIDTH, screen.getGuiTop() + y, 21, 22, Component.translatable("gui.ap_expanded_modules.smart_glasses.disk_drive"));
         this.screen = screen;
+        this.setTooltip(Tooltip.create(Component.translatable("gui.ap_expanded_modules.smart_glasses.disk_drive")));
     }
 
     public boolean checkItem() {
@@ -75,12 +77,6 @@ public class DiskDriveTab extends AbstractWidget {
         this.isEnabled = true;
         screen.setCurrentType(SlotType.PERIPHERALS);
         ((ISmartGlassesScreen) screen).setDisk(true);
-    }
-
-    public void renderTooltip(GuiGraphics gui, int x, int y) {
-        if (screen != null && isMouseOver(x, y)) {
-            gui.renderTooltip(Minecraft.getInstance().font, Component.translatable("gui.ap_expanded_modules.smart_glasses.disk_drive"), x, y);
-        }
     }
 
     @Override
