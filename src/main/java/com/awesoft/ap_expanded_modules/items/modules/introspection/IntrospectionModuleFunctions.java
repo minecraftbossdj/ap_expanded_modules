@@ -32,10 +32,16 @@ public class IntrospectionModuleFunctions implements IModuleFunctions {
 
     @LuaFunction
     public final boolean impulse(double x, double y, double z) {
+        SmartGlassesComputer computer = access.getComputer();
+        if (!computer.isEquipped()) {
+            return false;
+        }
+        if (!(computer.getEntity() instanceof LivingEntity entity)) {
+            return false;
+        }
         if (introspectionModule.impulseCooldown > 0) {
             return false;
         }
-        SmartGlassesComputer computer = access.getComputer();
         Entity entity = computer.getEntity();
         assert entity != null;
 
