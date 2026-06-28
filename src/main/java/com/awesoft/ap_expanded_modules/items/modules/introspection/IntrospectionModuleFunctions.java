@@ -41,9 +41,6 @@ public class IntrospectionModuleFunctions implements IModuleFunctions {
         if (!computer.isEquipped()) {
             return false;
         }
-        if (!(computer.getEntity() instanceof LivingEntity entity)) {
-            return false;
-        }
         if (introspectionModule.impulseCooldown > 0) {
             return false;
         }
