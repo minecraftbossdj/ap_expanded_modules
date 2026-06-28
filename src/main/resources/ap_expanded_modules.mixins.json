@@ -4,8 +4,18 @@
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
   "client": [
+    "AbstractContainerMenuInvoker",
+    "AbstractContainerScreenAccessor",
+    "ScreenInvoker",
+    "SmartGlassesScreenMixin",
+    "SmartGlassesSwitchAccessor",
+    "SmartGlassesSwitchMixin"
   ],
   "mixins": [
+    "AbstractPeripheralMixin",
+    "SmartGlassesComputerMixin",
+    "SmartGlassesContainerMixin",
+    "SmartGlassesInvHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -2,5 +2,6 @@
   "itemGroup.ap_expanded_modules.main": "AP: Expanded Modules",
   "item.ap_expanded_modules.disk_drive_module": "Disk Drive Module",
   "item.ap_expanded_modules.introspection_module": "Introspection Module",
-  "item.ap_expanded_modules.debug_module": "Debug Module"
+  "item.ap_expanded_modules.debug_module": "Debug Module",
+  "gui.ap_expanded_modules.smart_glasses.disk_drive": "Disk Drive"
 }

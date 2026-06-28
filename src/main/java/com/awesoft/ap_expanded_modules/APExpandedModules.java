@@ -37,7 +37,7 @@ import org.slf4j.Logger;
 @Mod(APExpandedModules.MODID)
 public class APExpandedModules {
     public static final String MODID = "ap_expanded_modules";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
 
     public APExpandedModules(IEventBus modEventBus, ModContainer modContainer) {

@@ -14,6 +14,13 @@ repositories {
         dir 'libs'
     }
     maven {
+        name = "Theillusivec4 Maven"
+        url = "https://maven.theillusivec4.top/"
+        content {
+            includeGroup("top.theillusivec4.curios")
+        }
+    }
+    maven {
         name = "Squiddev Maven"
         url = "https://maven.squiddev.cc"
         content {
@@ -108,6 +115,11 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 dependencies {
     implementation("blank:AdvancedPeripherals:1.21.1:0.8.0a")
     implementation "cc.tweaked:cc-tweaked-${minecraft_version}-forge:${cc_version}"
+    implementation "cc.tweaked:cc-tweaked-${minecraft_version}-forge-api:${cc_version}"
+    implementation "cc.tweaked:cc-tweaked-${minecraft_version}-common:${cc_version}"
+
+    runtimeOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}"
+    compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
