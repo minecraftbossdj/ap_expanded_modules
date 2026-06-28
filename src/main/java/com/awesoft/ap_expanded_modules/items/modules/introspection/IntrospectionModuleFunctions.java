@@ -31,6 +31,11 @@ public class IntrospectionModuleFunctions implements IModuleFunctions {
     }
 
     @LuaFunction
+    public final int getImpulseCooldown() {
+        return introspectionModule.impulseCooldown;
+    }
+
+    @LuaFunction
     public final boolean impulse(double x, double y, double z) {
         SmartGlassesComputer computer = access.getComputer();
         if (!computer.isEquipped()) {
