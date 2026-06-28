@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "#E#",
+    "PIP"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "#": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "E": {
+      "item": "minecraft:ender_chest"
+    },
+    "P": {
+      "item": "advancedperipherals:peripheral_casing"
+    }
+  },
+  "result": {
+    "id": "ap_expanded_modules:introspection_module",
+    "count": 1
+  }
+}

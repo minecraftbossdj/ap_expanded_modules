@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "DCD",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "advancedperipherals:peripheral_casing"
+    },
+    "D": {
+      "item": "computercraft:disk_drive"
+    }
+  },
+  "result": {
+    "id": "ap_expanded_modules:disk_drive_module",
+    "count": 1
+  }
+}
