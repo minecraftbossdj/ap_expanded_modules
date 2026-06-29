@@ -59,7 +59,7 @@ public class IntrospectionModuleFunctions implements IModuleFunctions {
         entity.hasImpulse = true;
         entity.hurtMarked = true;
         introspectionModule.impulseCooldown = Math.max((int) entity.getDeltaMovement().length() *2,5);
-        System.out.println(introspectionModule.impulseCooldown);
+        com.awesoft.ap_expanded_modules.APExpandedModules.LOGGER.debug("Impulse cooldown set to: {}", introspectionModule.impulseCooldown);
         return true;
     }
 
