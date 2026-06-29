@@ -21,6 +21,7 @@ import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
@@ -51,6 +52,7 @@ public class DiskDriveTab extends AbstractWidget {
         } else {
             graphics.blit(BACKGROUND, this.getX(), this.getY(), 23, 217, 21, 22);
         }
+        graphics.renderFakeItem(new ItemStack(APEMItems.DISK_DRIVE_MODULE.get()),this.getX()+1, this.getY()+3);
     }
 
     @Override
